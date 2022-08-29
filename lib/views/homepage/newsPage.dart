@@ -2,7 +2,7 @@ import 'package:case_infobox/constants/enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:url_launcher/url_launcher.dart';
-//Burak Özer
+//- Burak Özer -
 import '../../viewmodel/haberler_view_model.dart';
 
 class NewsPage extends StatefulWidget {
