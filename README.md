@@ -33,8 +33,7 @@ MVVM
     * MVVM architecture is used.
     
     
- 
-    
+ ![Screenshot_1661758027]([https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png](https://user-images.githubusercontent.com/46723964/187217344-68d4db8b-50c6-497f-ab1c-3b58345a6c26.png) | width=100)
 
 
 
