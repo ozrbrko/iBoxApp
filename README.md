@@ -1,6 +1,6 @@
 # iBoxApp
 
-iBoxApp is my a new Flutter project.
+iBoxApp is my new Flutter project.
 
 ## Getting Started
 
