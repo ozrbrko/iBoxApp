@@ -1,16 +1,35 @@
 # case_infobox
 
-A new Flutter project.
+iBoxApp is my a new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+iBox is a mobile application where the user can learn calendar, weather, seasonal food information, current news, pharmacies on duty, instant exchange, crypto information. With the Note tab, users can add, update, and delete notes.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Software technologies for this project:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+SQFLITE
+
+    * Login, Register screen design and user login processes are done using SQFLITE. By using SQFLITE, the user's information is taken from the register page and saved in the database created in the device's memory (local cache). For the login process, the information here is matched and the login is provided.
+    
+    * Operations on the Notes page were made using SQFLITE. This information is saved in the local cache created database.
+
+SharedPreferences for autologin
+
+    * Once the user logs in, the login stays on until they log out. This process is provided with SharedPreferences.
+  
+Mobx
+
+    * Mobx (dio) state management approach is used.
+    
+    
+CollectApi
+
+    * Services on CollectApi are used.
+
+MVVM
+
+    * MVVM architecture is used.
+
