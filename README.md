@@ -35,8 +35,9 @@ MVVM
     
  
     
-[![name]([https://github.com/thecodebuzz/FileSizePOC/blob/master/TheCodebuzz.png](https://user-images.githubusercontent.com/46723964/187215908-08622503-ecfc-4dac-8d53-5ea924a6c3e4.png) =400x250)]
+[![Screenshot_1661758027]([https://github.com/thecodebuzz/FileSizePOC/blob/master/TheCodebuzz.png](https://user-images.githubusercontent.com/46723964/187216342-c9c7dfa4-63e8-4ca9-89c0-032bd38074b2.png) =400x250)]
 
 
 
 
+![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187216342-c9c7dfa4-63e8-4ca9-89c0-032bd38074b2.png)
