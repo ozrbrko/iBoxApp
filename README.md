@@ -33,11 +33,11 @@ MVVM
     * MVVM architecture is used.
     
     
-    
+    <p align="center">
+  <img src="![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187215090-3f0134ee-1513-4c8d-a45b-cdac3ba4645b.png)" width="350" title="hover text">
+  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+</p>
     
 
 
-![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187215090-3f0134ee-1513-4c8d-a45b-cdac3ba4645b.png)
-![Screenshot_1661758031](https://user-images.githubusercontent.com/46723964/187215241-235d307b-3afa-4dc4-b350-b59c851c1329.png)
-![Screenshot_1661758075](https://user-images.githubusercontent.com/46723964/187215254-c5e19a92-019d-4c17-b3b9-6093543f80b2.png)
 
