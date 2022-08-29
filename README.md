@@ -31,4 +31,10 @@ CollectApi
 MVVM
 
     * MVVM architecture is used.
+    
+    
+    
+    
 
+
+![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187215090-3f0134ee-1513-4c8d-a45b-cdac3ba4645b.png)
