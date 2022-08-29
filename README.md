@@ -35,7 +35,8 @@ MVVM
     
  
     
-<img src= w![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187215661-6146e8f4-f490-4a6c-9ab1-83165a5c2d31.png)
-idth="128"/>
+[![name]([https://github.com/thecodebuzz/FileSizePOC/blob/master/TheCodebuzz.png](https://user-images.githubusercontent.com/46723964/187215908-08622503-ecfc-4dac-8d53-5ea924a6c3e4.png) =400x250)]
+
+
 
 
