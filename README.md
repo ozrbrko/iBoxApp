@@ -1,4 +1,4 @@
-# case_infobox
+# iBoxApp
 
 iBoxApp is my a new Flutter project.
 
