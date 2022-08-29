@@ -33,6 +33,7 @@ MVVM
     * MVVM architecture is used.
     
  
+ Screenshots of App
 
 ![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187218886-c3be399e-058d-47c6-9f45-b0ec1212237c.png)
 ![Screenshot_1661758031](https://user-images.githubusercontent.com/46723964/187218888-ceed80e3-e292-46a2-baf4-c9e195c8c86c.png)
