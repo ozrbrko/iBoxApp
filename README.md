@@ -6,7 +6,6 @@ iBoxApp is my a new Flutter project.
 
 iBox is a mobile application where the user can learn calendar, weather, seasonal food information, current news, pharmacies on duty, instant exchange, crypto information. With the Note tab, users can add, update, and delete notes.
 
-A few resources to get you started if this is your first Flutter project:
 
 Software technologies for this project:
 
