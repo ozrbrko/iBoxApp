@@ -33,28 +33,30 @@ MVVM
     * MVVM architecture is used.
     
  
- Screenshots of App
  
- <img width: "200" src = "https://user-images.githubusercontent.com/46723964/187218886-c3be399e-058d-47c6-9f45-b0ec1212237c.png" >
+Screenshots of App
+ 
+ 
 
-![Screenshot_1661758031](https://user-images.githubusercontent.com/46723964/187218888-ceed80e3-e292-46a2-baf4-c9e195c8c86c.png)
-![Screenshot_1661758037](https://user-images.githubusercontent.com/46723964/187218892-f8a946ad-861c-4b8f-a988-a24f65effca8.png)
-![Screenshot_1661758075](https://user-images.githubusercontent.com/46723964/187218898-b8df4135-4958-4e8f-9a98-a8397c3983fd.png)
-![Screenshot_1661758168](https://user-images.githubusercontent.com/46723964/187218861-3c922fb9-12c7-49cb-8d4c-98acfd3963b1.png)
-![Screenshot_1661758172](https://user-images.githubusercontent.com/46723964/187218862-837516b9-f2e5-4553-963f-4b9f7bf4f4df.png)![Screenshot_1661758177](https://user-images.githubusercontent.com/46723964/187218865-99582cda-e479-473e-9d35-7e1e04a93c37.png)![Screenshot_1661758234](https://user-images.githubusercontent.com/46723964/187218866-439a68a1-507f-4b9c-b542-4355b8e152c2.png)
-![Screenshot_1661758383](https://user-images.githubusercontent.com/46723964/187218869-70ab9dcd-388b-4f3a-8b72-d6271d674adf.png)
-![Screenshot_1661758467](https://user-images.githubusercontent.com/46723964/187218871-9518c547-8a5e-4593-8248-2ee93d0cf61a.png)
-![Screenshot_1661758473](https://user-images.githubusercontent.com/46723964/187218872-4eae68c6-2066-46b4-af05-89dd72a90036.png)
-![Screenshot_1661758482](https://user-images.githubusercontent.com/46723964/187218873-4bfd9a77-1cff-43ec-bcfe-d31ce85a49c1.png)
-![Screenshot_1661758523](https://user-images.githubusercontent.com/46723964/187218878-65d0d601-5d9c-46b4-ace8-7fca7b1c7cff.png)
-![Screenshot_1661758572](https://user-images.githubusercontent.com/46723964/187218882-627cdf45-b937-4282-9249-8426d1f69c0e.png)
-![Screenshot 2022-08-29 113338](https://user-images.githubusercontent.com/46723964/187218883-2371bdd2-4466-4e8b-ad1f-736f0392260a.png)
-![Screenshot_1661758095](https://user-images.githubusercontent.com/46723964/187218844-9dd25034-47f4-493c-be6e-7878bf0723d9.png)
-![Screenshot_1661758106](https://user-images.githubusercontent.com/46723964/187218849-bbd61dd7-98fa-4d1b-a820-228633a8e0af.png)
-![Screenshot_1661758116](https://user-images.githubusercontent.com/46723964/187218853-38305c61-af8e-4ef6-8678-e69e132bdaa6.png)
-![Screenshot_1661758122](https://user-images.githubusercontent.com/46723964/187218857-4ea47c11-c70a-433d-974c-b7f1874f9760.png)
-
-
+![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187222651-d992b3d8-a272-4ddf-a2f6-139f7a88895f.png)
+![Screenshot_1661758031](https://user-images.githubusercontent.com/46723964/187222660-d2780adb-8cba-4090-9ae8-717cfd017677.png)
+![Screenshot_1661758037](https://user-images.githubusercontent.com/46723964/187222662-266ef3eb-3421-4c90-a90e-122cef8ab527.png)
+![Screenshot_1661758075](https://user-images.githubusercontent.com/46723964/187222666-122919cf-814d-4b82-967c-b42cda5a064a.png)
+![Screenshot_1661758095](https://user-images.githubusercontent.com/46723964/187222669-577fe9af-a6f5-403c-9eb4-e540701a8740.png)
+![Screenshot_1661758106](https://user-images.githubusercontent.com/46723964/187222673-6a0ac3b6-a995-4531-b5a3-31755b265b14.png)
+![Screenshot_1661758116](https://user-images.githubusercontent.com/46723964/187222677-ac7278f2-dbf4-4fcb-8e3e-83c753dc8d13.png)
+![Screenshot_1661758122](https://user-images.githubusercontent.com/46723964/187222679-28c50671-1cb2-4d74-ac16-7b9ef7bef3c6.png)
+![Screenshot_1661758168](https://user-images.githubusercontent.com/46723964/187222680-8782c50e-cce8-4afd-becc-0b7d53cf5fd5.png)
+![Screenshot_1661758172](https://user-images.githubusercontent.com/46723964/187222683-ff5f824c-e0b6-4776-a83b-35409a4b6bdd.png)
+![Screenshot_1661758177](https://user-images.githubusercontent.com/46723964/187222685-94ef2f8d-3131-4700-aa64-cedea53a9b83.png)
+![Screenshot_1661758234](https://user-images.githubusercontent.com/46723964/187222689-7940b434-816a-410d-b9b4-f0ee436eb2c3.png)
+![Screenshot_1661758383](https://user-images.githubusercontent.com/46723964/187222691-b984870e-e54c-40bb-bb64-615eed814862.png)
+![Screenshot_1661758467](https://user-images.githubusercontent.com/46723964/187222694-cd9b308d-c875-48c3-8636-0d992e9e2560.png)
+![Screenshot_1661758473](https://user-images.githubusercontent.com/46723964/187222697-72d81853-803c-4acd-a0db-43539df591d0.png)
+![Screenshot_1661758482](https://user-images.githubusercontent.com/46723964/187222698-04c1ee65-1dc3-48a0-801a-14b1f217ea8a.png)
+![Screenshot_1661758523](https://user-images.githubusercontent.com/46723964/187222701-c0eb8d16-14e2-4516-84fd-a979f7887184.png)
+![Screenshot_1661758572](https://user-images.githubusercontent.com/46723964/187222703-9d446577-3d41-4943-b1c1-31f5b5e9fb40.png)
+![Screenshot 2022-08-29 113338](https://user-images.githubusercontent.com/46723964/187222706-5769aa88-d286-4c70-9faa-a8079a54f934.png)
 
 
 
