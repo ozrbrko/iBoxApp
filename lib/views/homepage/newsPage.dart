@@ -2,9 +2,8 @@ import 'package:case_infobox/constants/enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+//Burak Özer
 import '../../viewmodel/haberler_view_model.dart';
-import 'homePage.dart';
 
 class NewsPage extends StatefulWidget {
   const NewsPage({Key? key}) : super(key: key);
@@ -52,7 +51,6 @@ class _NewsPageState extends State<NewsPage> {
               ),
             ],
           );
-          break;
 
         case PageState.SUCCESS:
           return SingleChildScrollView(
@@ -117,7 +115,6 @@ class _NewsPageState extends State<NewsPage> {
               ),
             ),
           );
-          break;
         default:
           return Container(
             child: Center(
