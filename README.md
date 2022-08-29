@@ -34,8 +34,9 @@ MVVM
     
  
  Screenshots of App
+ 
+ <img width: "200" src = "https://user-images.githubusercontent.com/46723964/187218886-c3be399e-058d-47c6-9f45-b0ec1212237c.png" >
 
-![Screenshot_1661758027](https://user-images.githubusercontent.com/46723964/187218886-c3be399e-058d-47c6-9f45-b0ec1212237c.png)
 ![Screenshot_1661758031](https://user-images.githubusercontent.com/46723964/187218888-ceed80e3-e292-46a2-baf4-c9e195c8c86c.png)
 ![Screenshot_1661758037](https://user-images.githubusercontent.com/46723964/187218892-f8a946ad-861c-4b8f-a988-a24f65effca8.png)
 ![Screenshot_1661758075](https://user-images.githubusercontent.com/46723964/187218898-b8df4135-4958-4e8f-9a98-a8397c3983fd.png)
