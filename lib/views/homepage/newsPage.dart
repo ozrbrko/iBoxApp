@@ -32,8 +32,14 @@ class _NewsPageState extends State<NewsPage> {
         title: Center(child: Text("Güncel Haberler",style: TextStyle(fontFamily: 'IBMPlexSans',fontWeight: FontWeight.bold,fontSize: 21),)),
         backgroundColor: Colors.red,
       ),
-      body: ListView(
-        children: [buildObserver()],
+      body: WillPopScope(
+
+        onWillPop: () async {
+          return false;
+        },
+        child: ListView(
+          children: [buildObserver()],
+        ),
       ),
     );
   }

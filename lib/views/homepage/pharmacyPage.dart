@@ -6,6 +6,8 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 
+import '../../Models/eczane_model.dart';
+
 class PharmacyPage extends StatefulWidget {
   const PharmacyPage({Key? key}) : super(key: key);
 
@@ -74,8 +76,13 @@ class _PharmacyPageState extends State<PharmacyPage> {
         )),
         backgroundColor: Colors.red,
       ),
-      body: ListView(
-        children: [buildObserver()],
+      body: WillPopScope(
+        onWillPop: () async{
+          return false;
+        },
+        child: ListView(
+          children: [buildObserver()],
+        ),
       ),
     );
   }
@@ -233,7 +240,7 @@ class _PharmacyPageState extends State<PharmacyPage> {
                     child: ListView.builder(
                       itemCount: eczaneStore!.eczaneResultList!.length,
                       itemBuilder: (context, index) {
-                        final item = eczaneStore!.eczaneResultList![index];
+                        EczaneResult? item = eczaneStore!.eczaneResultList![index];
                         return Column(
                           children: [
                             Padding(
@@ -251,11 +258,15 @@ class _PharmacyPageState extends State<PharmacyPage> {
                                               const EdgeInsets.only(top: 15.0),
                                           child: GestureDetector(
                                             onTap: () {
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          mapPage()));
+
+                                              var parts = item!.loc!.split(',');
+                                              var lang = parts[0].trim();
+                                              var langD = double.parse(lang);
+                                              print("${langD}  bu ");
+                                              var lat = parts.sublist(1).join(',').trim();
+                                              var latD = double.parse(lat);
+                                              MapUtils.openMap(langD, latD);
+                                              print("${latD} şu");
                                             },
                                             child: Container(
                                               decoration: BoxDecoration(

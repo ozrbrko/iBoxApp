@@ -30,50 +30,55 @@ class _TradePageState extends State<TradePage> {
           )),
           backgroundColor: AppTheme.colors.red_infobox,
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              Container(
-                height: 60,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25),
-                  color: Colors.grey[300],
-                ),
-                child: TabBar(
-                  indicator: BoxDecoration(
-                    color: Colors.green[300],
+        body: WillPopScope(
+          onWillPop: () async{
+            return false;
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                Container(
+                  height: 60,
+                  decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(25),
+                    color: Colors.grey[300],
                   ),
-                  labelColor: Colors.white,
-                  unselectedLabelColor: Colors.black,
-                  tabs: [
-                    Tab(
-                      text: "Döviz",
-                      icon: Icon(Icons.attach_money),
+                  child: TabBar(
+                    indicator: BoxDecoration(
+                      color: Colors.green[300],
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                    labelColor: Colors.white,
+                    unselectedLabelColor: Colors.black,
+                    tabs: [
+                      Tab(
+                        text: "Döviz",
+                        icon: Icon(Icons.attach_money),
 
-                    ),
-                    Tab(
-                      text: "Altın",
-                      icon: Icon(Icons.money),
-                    ),
-                    Tab(
-                      text: "Kripto",
-                      icon: Icon(Icons.currency_bitcoin),
-                    )
-                  ],
+                      ),
+                      Tab(
+                        text: "Altın",
+                        icon: Icon(Icons.money),
+                      ),
+                      Tab(
+                        text: "Kripto",
+                        icon: Icon(Icons.currency_bitcoin),
+                      )
+                    ],
+                  ),
                 ),
-              ),
-              const Expanded(
-                child: TabBarView(
-                  children: [
-                    DovizPage(),
-                    AltinPage(),
-                    KriptoPage(),
-                  ],
-                ),
-              )
-            ],
+                const Expanded(
+                  child: TabBarView(
+                    children: [
+                      DovizPage(),
+                      AltinPage(),
+                      KriptoPage(),
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
