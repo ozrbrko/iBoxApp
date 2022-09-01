@@ -23,5 +23,6 @@ class ApiConfig {
 
   static const String getEczane = baseURL+ "health/dutyPharmacy";
 
+  static const String google_api_key = "AIzaSyA2Jm6nCkSPY_sIt2vYlOkPIWQhoaii7m4";
 
 }
