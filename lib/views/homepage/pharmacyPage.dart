@@ -298,7 +298,7 @@ class _PharmacyPageState extends State<PharmacyPage> {
                                                                     top: 10.0,
                                                                     left: 5),
                                                             child: Image.asset(
-                                                                "lib/assets/images/eczane.jpg"),
+                                                                "assets/images/eczane.jpg"),
                                                           )),
                                                       Padding(
                                                         padding:

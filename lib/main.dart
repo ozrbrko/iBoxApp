@@ -2,18 +2,14 @@ import 'dart:convert';
 
 import 'package:case_infobox/Models/Corona.dart';
 import 'package:case_infobox/Models/CoronaCevap.dart';
+import 'package:case_infobox/router.dart';
 import 'package:case_infobox/views/homepage/newsPage.dart';
 import 'package:case_infobox/views/homepage/pharmacyPage.dart';
-import 'package:case_infobox/views/homepage/sidebar/NotDetayPage.dart';
-import 'package:case_infobox/views/homepage/sidebar/NotKayitPage.dart';
-import 'package:case_infobox/views/homepage/sidebar/NotlarPage.dart';
 import 'package:case_infobox/views/homepage/tradePages/tradePage.dart';
 import 'package:case_infobox/views/login-register-pages/loginPage.dart';
-import 'package:case_infobox/views/login-register-pages/registerPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
 import 'views/homepage/homePage.dart';
 
 void main() {
@@ -40,14 +36,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: LoginPage(),
-      routes: {
-        'notlarPage': (context)=> NotlarPage(),
-        'notKayitPage': (context) => NotKayitPage(),
-        'loginPage': (context) => LoginPage(),
-        'registerPage': (context) => RegisterPage(),
-        'mainPage': (context) => MyHomePage(title: "title"),
-
-      },
+      routes: routes,
     );
   }
 }

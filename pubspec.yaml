@@ -78,11 +78,11 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "lib/assets/images/logoo.png"
+  image_path: "assets/images/logoo.png"
 
 flutter_native_splash:
   color: "#f5cb42"
-  image: lib/assets/images/logoo.png
+  image: assets/images/logoo.png
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -97,9 +97,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - lib/assets/images/logoo.png
+    - assets/images/logoo.png
     - lib/database/ibox.db
-    - lib/assets/images/eczane.jpg
+    - assets/images/eczane.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -118,7 +118,7 @@ flutter:
   fonts:
     - family: IBMPlexSans
       fonts:
-        - asset: lib/assets/fonts/IBMPlexSans-Regular.ttf
+        - asset: assets/fonts/IBMPlexSans-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

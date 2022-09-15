@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: EdgeInsets.only(top: ekranGenisligi / 6),
                     child: SizedBox(
                         width: ekranYuksekligi / 4.5,
-                        child: Image.asset("lib/assets/images/logoo.png")),
+                        child: Image.asset("assets/images/logoo.png")),
                   ),
                 ),
                 const Text(

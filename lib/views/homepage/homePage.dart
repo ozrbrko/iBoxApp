@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:case_infobox/constants/enum.dart';
+import 'package:case_infobox/responsive/frame_size.dart';
 import 'package:case_infobox/viewmodel/corona_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -46,6 +47,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    FrameSize.init(context: context);
     localizationsDelegates:
     [
       GlobalMaterialLocalizations.delegate,
@@ -119,7 +122,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height / 3),
+                    top: FrameSize.screenWidth! / 3),
                 child: CircularProgressIndicator(),
               ),
             ],
@@ -132,7 +135,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.width / 17.05,
+                    top: FrameSize.screenWidth! / 17.05,
                   ),
                   child: Row(
                     children: [
