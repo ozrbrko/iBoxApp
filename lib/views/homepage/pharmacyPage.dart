@@ -1,4 +1,5 @@
 import 'package:case_infobox/constants/enum.dart';
+import 'package:case_infobox/responsive/frame_size.dart';
 import 'package:case_infobox/viewmodel/eczane_view_model.dart';
 import 'package:case_infobox/views/homepage/mapPage.dart';
 import 'package:flutter/material.dart';
@@ -63,6 +64,7 @@ class _PharmacyPageState extends State<PharmacyPage> {
 
   @override
   Widget build(BuildContext context) {
+    FrameSize.init(context: context);
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -95,7 +97,7 @@ class _PharmacyPageState extends State<PharmacyPage> {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height / 3),
+                    top: FrameSize.screenHeight! / 3),
                 child: CircularProgressIndicator(),
               ),
             ],
@@ -235,8 +237,8 @@ class _PharmacyPageState extends State<PharmacyPage> {
                     ),
                   ),
                   Container(
-                    height: MediaQuery.of(context).size.height / 1.35,
-                    width: MediaQuery.of(context).size.width,
+                    height: FrameSize.screenHeight! / 1.35,
+                    width: FrameSize.screenWidth,
                     child: ListView.builder(
                       itemCount: eczaneStore!.eczaneResultList!.length,
                       itemBuilder: (context, index) {
@@ -389,7 +391,7 @@ class _PharmacyPageState extends State<PharmacyPage> {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height / 3),
+                    top: FrameSize.screenHeight! / 3),
                 child: CircularProgressIndicator(),
               ),
               Padding(

@@ -1,5 +1,6 @@
 import 'package:case_infobox/Models/Notlardao.dart';
 import 'package:case_infobox/main.dart';
+import 'package:case_infobox/responsive/frame_size.dart';
 import 'package:case_infobox/views/homepage/sidebar/NotDetayPage.dart';
 import 'package:case_infobox/views/homepage/sidebar/NotKayitPage.dart';
 import 'package:case_infobox/views/homepage/sidebar/Notlar.dart';
@@ -21,6 +22,7 @@ class _NotlarPageState extends State<NotlarPage> {
 
   @override
   Widget build(BuildContext context) {
+    FrameSize.init(context: context);
     var date = DateTime.now();
     var month = "${date.day}/${date.month}/${date.year}";
     return Scaffold(
@@ -70,7 +72,7 @@ class _NotlarPageState extends State<NotlarPage> {
                         ),
                         child: SizedBox(
                           height: 70,
-                          width: MediaQuery.of(context).size.width / 1.05,
+                          width: FrameSize.screenWidth! / 1.05,
                           child: Padding(
                             padding: const EdgeInsets.only(top: 10.0,left: 6),
                             child: Row(

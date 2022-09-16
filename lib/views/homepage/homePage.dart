@@ -166,7 +166,7 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                     height: 250,
-                    width: MediaQuery.of(context).size.width / 1.05,
+                    width: FrameSize.screenWidth! / 1.05,
                     child: SfDateRangePicker(),
                   ),
                 ),
@@ -176,7 +176,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: MediaQuery.of(context).size.width / 25.05,
+                            top: FrameSize.screenWidth! / 25.05,
                             left: 8),
                         child: Text(
                           "Ankara Hava Durumu",
@@ -189,7 +189,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: MediaQuery.of(context).size.width / 25.05,),
+                  padding: EdgeInsets.only(top: FrameSize.screenWidth! / 25),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(5)),
@@ -203,7 +203,7 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                     height: 160,
-                    width: MediaQuery.of(context).size.width / 1.05,
+                    width: FrameSize.screenWidth! / 1.05,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: havaStore!.havaResultList!.length,
@@ -277,7 +277,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height / 3),
+                    top: FrameSize.screenHeight! / 3),
                 child: CircularProgressIndicator(),
               ),
             ],
@@ -296,7 +296,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: MediaQuery.of(context).size.width / 25.05,
+                            top: FrameSize.screenWidth! / 25.05,
                             left: 8),
                         child: Text(
                           "Bu Ayın Besinleri",
@@ -314,7 +314,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                            top: MediaQuery.of(context).size.width / 25.05,
+                            top: FrameSize.screenWidth! / 25.05,
                             left: 8),
                         child: Text(
                           "Mevsim Meyveleri",
@@ -328,7 +328,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Container(
                   height: 80,
-                  width: MediaQuery.of(context).size.width / 1.05,
+                  width: FrameSize.screenWidth! / 1.05,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: data.mevsim_meyve!.length,
@@ -397,7 +397,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Container(
                   height: 80,
-                  width: MediaQuery.of(context).size.width / 1.05,
+                  width: FrameSize.screenWidth! / 1.05,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: data.mevsim_sebze!.length,
@@ -466,7 +466,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Container(
                   height: 80,
-                  width: MediaQuery.of(context).size.width / 1.05,
+                  width: FrameSize.screenWidth! / 1.05,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: data.her_zaman_sebze!.length,

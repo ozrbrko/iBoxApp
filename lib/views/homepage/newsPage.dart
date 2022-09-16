@@ -1,4 +1,5 @@
 import 'package:case_infobox/constants/enum.dart';
+import 'package:case_infobox/responsive/frame_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -52,7 +53,7 @@ class _NewsPageState extends State<NewsPage> {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height / 3),
+                    top: FrameSize.screenHeight! / 3),
                 child: CircularProgressIndicator(),
               ),
             ],
@@ -61,8 +62,8 @@ class _NewsPageState extends State<NewsPage> {
         case PageState.SUCCESS:
           return SingleChildScrollView(
             child: Container(
-              height: MediaQuery.of(context).size.height / 1.24,
-              width: MediaQuery.of(context).size.width,
+              height: FrameSize.screenHeight! / 1.24,
+              width: FrameSize.screenWidth,
               child: ListView.builder(
                 itemCount: haberlerStore!.haberlerResultList!.length,
                 itemBuilder: (context, index) {
@@ -79,7 +80,7 @@ class _NewsPageState extends State<NewsPage> {
                         child: Column(
                           children: [
                             SizedBox(
-                              width: MediaQuery.of(context).size.width / 1.05,
+                              width: FrameSize.screenWidth! / 1.05,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(10.0),
@@ -97,7 +98,7 @@ class _NewsPageState extends State<NewsPage> {
                                       bottomLeft: Radius.circular(12.0),
                                     ),
                                     color: Colors.white),
-                                width: MediaQuery.of(context).size.width / 1.05,
+                                width: FrameSize.screenWidth! / 1.05,
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(

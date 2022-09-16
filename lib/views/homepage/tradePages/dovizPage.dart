@@ -1,3 +1,4 @@
+import 'package:case_infobox/responsive/frame_size.dart';
 import 'package:case_infobox/viewmodel/doviz_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -24,6 +25,7 @@ class _DovizPageState extends State<DovizPage> {
 
   @override
   Widget build(BuildContext context) {
+    FrameSize.init(context: context);
     return Scaffold(
       appBar: null,
       body: ListView(
@@ -40,7 +42,7 @@ class _DovizPageState extends State<DovizPage> {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height / 3),
+                    top: FrameSize.screenHeight! / 3),
                 child: CircularProgressIndicator(),
               ),
             ],
@@ -50,8 +52,8 @@ class _DovizPageState extends State<DovizPage> {
         case PageState.SUCCESS:
           return SingleChildScrollView(
             child: Container(
-                height: MediaQuery.of(context).size.height / 1.24,
-                width: MediaQuery.of(context).size.width,
+                height: FrameSize.screenHeight! / 1.24,
+                width: FrameSize.screenWidth,
                 child: ListView.builder(
                     itemCount: dovizStore!.dovizResultList!.length,
                     itemBuilder: (context, index) {
@@ -73,8 +75,8 @@ class _DovizPageState extends State<DovizPage> {
                                   ),
                                 ],
                               ),
-                              width: MediaQuery.of(context).size.width / 1.05,
-                              height: MediaQuery.of(context).size.width / 7,
+                              width: FrameSize.screenWidth! / 1.05,
+                              height: FrameSize.screenWidth! / 7,
                               child: Row(
                                 children: [
                                   Padding(

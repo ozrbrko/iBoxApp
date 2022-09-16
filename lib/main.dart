@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:case_infobox/Models/Corona.dart';
 import 'package:case_infobox/Models/CoronaCevap.dart';
+import 'package:case_infobox/responsive/frame_size.dart';
 import 'package:case_infobox/router.dart';
 import 'package:case_infobox/views/homepage/newsPage.dart';
 import 'package:case_infobox/views/homepage/pharmacyPage.dart';
@@ -96,6 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    FrameSize.init(context: context);
+
     return Scaffold(
       appBar: null,
       body: tabs[_selectedIndex],
@@ -138,7 +141,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
         height: 70,
-        width: MediaQuery.of(context).size.width / 4,
+        width: FrameSize.screenWidth! / 4,
         decoration: index == _selectedIndex
             ? BoxDecoration(
                 //color: Colors.blue
