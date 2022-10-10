@@ -1,4 +1,5 @@
 import 'package:case_infobox/main.dart';
+import 'package:case_infobox/responsive/frame_size.dart';
 import 'package:case_infobox/views/login-register-pages/registerPage.dart';
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
@@ -80,9 +81,9 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    var ekranBilgisi = MediaQuery.of(context);
-    final double ekranYuksekligi = ekranBilgisi.size.height;
-    final double ekranGenisligi = ekranBilgisi.size.width;
+
+    FrameSize.init(context: context);
+
     return WillPopScope(
       child: Scaffold(
         resizeToAvoidBottomInset: true,
@@ -95,9 +96,9 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 Center(
                   child: Padding(
-                    padding: EdgeInsets.only(top: ekranGenisligi / 6),
+                    padding: EdgeInsets.only(top: FrameSize.screenWidth! / 6),
                     child: SizedBox(
-                        width: ekranYuksekligi / 4.5,
+                        width: FrameSize.screenHeight! / 4.5,
                         child: Image.asset("assets/images/logoo.png")),
                   ),
                 ),
@@ -107,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      left: ekranYuksekligi / 16, top: ekranGenisligi / 10),
+                      left: FrameSize.screenHeight! / 16, top: FrameSize.screenWidth! / 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
@@ -121,9 +122,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      top: ekranGenisligi / 90,
-                      left: ekranYuksekligi / 17,
-                      right: ekranYuksekligi / 17),
+                      top: FrameSize.screenWidth! / 90,
+                      left: FrameSize.screenHeight! / 17,
+                      right: FrameSize.screenHeight! / 17),
                   child: TextFormField(
                     controller: tfKullaniciMail,
                     validator: MultiValidator([
@@ -144,14 +145,14 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      left: ekranYuksekligi / 16, top: ekranGenisligi / 20),
+                      left: FrameSize.screenHeight! / 16, top: FrameSize.screenWidth! / 20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         "Şifre",
                         style: TextStyle(
-                            fontSize: ekranYuksekligi / 43.04761905,
+                            fontSize: FrameSize.screenHeight! / 43.04761905,
                             fontWeight: FontWeight.bold,fontFamily: 'IBMPlexSans'),
                       ),
                     ],
@@ -159,9 +160,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      top: ekranGenisligi / 90,
-                      left: ekranYuksekligi / 17,
-                      right: ekranYuksekligi / 17),
+                      top: FrameSize.screenWidth! / 90,
+                      left: FrameSize.screenHeight! / 17,
+                      right: FrameSize.screenHeight! / 17),
                   child: TextFormField(
                     textAlignVertical: TextAlignVertical.center,
                     controller: tfKullaniciSifre,
@@ -196,7 +197,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      right: ekranGenisligi / 9.0, top: ekranGenisligi / 55),
+                      right: FrameSize.screenWidth! / 9.0, top: FrameSize.screenWidth!),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -210,28 +211,28 @@ class _LoginPageState extends State<LoginPage> {
                                 return Dialog(
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(
-                                          ekranYuksekligi / 25.82857143)),
+                                          FrameSize.screenHeight! / 25.82857143)),
 
                                   //this right here
                                   child: Container(
-                                    height: ekranYuksekligi / 2.720,
+                                    height: FrameSize.screenHeight! / 2.720,
                                     decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(
-                                                ekranGenisligi / 14))),
+                                                FrameSize.screenWidth! / 14))),
                                     child: Column(
                                       children: [
                                         Container(
-                                          height: ekranGenisligi / 11,
-                                          width: ekranYuksekligi,
+                                          height: FrameSize.screenWidth! / 11,
+                                          width: FrameSize.screenHeight,
                                           decoration: BoxDecoration(
                                             color: Color(0xff74A2B7),
                                             borderRadius: BorderRadius.only(
                                                 topRight: Radius.circular(
-                                                    ekranGenisligi / 15.57),
+                                                    FrameSize.screenWidth! / 15.57),
                                                 topLeft: Radius.circular(
-                                                    ekranGenisligi / 15.57)),
+                                                    FrameSize.screenWidth! / 15.57)),
                                           ),
                                           child: Row(
                                             mainAxisAlignment:
@@ -242,7 +243,7 @@ class _LoginPageState extends State<LoginPage> {
                                                 style: TextStyle(
                                                     color: Colors.white,
                                                     fontSize:
-                                                        ekranGenisligi / 20),
+                                                        FrameSize.screenWidth! / 20),
                                               ),
                                             ],
                                           ),
@@ -250,15 +251,15 @@ class _LoginPageState extends State<LoginPage> {
                                         Padding(
                                           padding: EdgeInsets.only(
                                               top:
-                                                  ekranYuksekligi / 19.37142857,
-                                              left: ekranYuksekligi /
+                                                  FrameSize.screenHeight! / 19.37142857,
+                                              left: FrameSize.screenHeight! /
                                                   45.57983193),
                                           child: Row(
                                             children: [
                                               Text(
                                                 "E-Mail",
                                                 style: TextStyle(
-                                                    fontSize: ekranYuksekligi /
+                                                    fontSize: FrameSize.screenHeight! /
                                                         43.04761905,
                                                     fontWeight:
                                                         FontWeight.bold,fontFamily: 'IBMPlexSans'),
@@ -268,11 +269,11 @@ class _LoginPageState extends State<LoginPage> {
                                         ),
                                         Padding(
                                           padding: EdgeInsets.only(
-                                              top: ekranYuksekligi /
+                                              top: FrameSize.screenHeight! /
                                                   77.48571429),
                                           child: SizedBox(
-                                            height: ekranGenisligi / 9,
-                                            width: ekranGenisligi / 1.4,
+                                            height: FrameSize.screenWidth! / 9,
+                                            width: FrameSize.screenWidth! / 1.4,
                                             child: TextField(
                                               decoration: InputDecoration(
                                                   filled: true,
@@ -284,28 +285,28 @@ class _LoginPageState extends State<LoginPage> {
                                                                   0xffE6E7E9)),
                                                       borderRadius: BorderRadius
                                                           .all(Radius.circular(
-                                                              ekranYuksekligi /
+                                                              FrameSize.screenHeight! /
                                                                   77.48571429)))),
                                             ),
                                           ),
                                         ),
                                         Padding(
                                           padding: EdgeInsets.only(
-                                              top: ekranGenisligi / 9),
+                                              top: FrameSize.screenWidth! / 9),
                                           child: Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceEvenly,
                                             children: [
                                               SizedBox(
-                                                width: ekranYuksekligi / 7.50,
-                                                height: ekranGenisligi / 10,
+                                                width: FrameSize.screenHeight! / 7.50,
+                                                height: FrameSize.screenWidth! / 10,
                                                 child: ElevatedButton(
                                                   child: Text(
                                                     "İptal Et",
                                                     style: TextStyle(
                                                         color: Colors.white,
                                                         fontSize:
-                                                            ekranGenisligi /
+                                                            FrameSize.screenWidth! /
                                                                 25.00,fontFamily: 'IBMPlexSans'),
                                                   ),
                                                   style:
@@ -328,15 +329,15 @@ class _LoginPageState extends State<LoginPage> {
                                                 ),
                                               ),
                                               SizedBox(
-                                                width: ekranYuksekligi / 7.50,
-                                                height: ekranGenisligi / 10,
+                                                width: FrameSize.screenHeight! / 7.50,
+                                                height: FrameSize.screenWidth! / 10,
                                                 child: ElevatedButton(
                                                   child: Text(
                                                     "Gönder",
                                                     style: TextStyle(
                                                         color: Colors.white,
                                                         fontSize:
-                                                            ekranGenisligi /
+                                                            FrameSize.screenWidth! /
                                                                 25.00,fontFamily: 'IBMPlexSans'),
                                                   ),
                                                   style:
@@ -385,10 +386,10 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: ekranGenisligi / 7),
+                  padding: EdgeInsets.only(top: FrameSize.screenWidth! / 7),
                   child: SizedBox(
-                    width: ekranYuksekligi / 4.50,
-                    height: ekranGenisligi / 10,
+                    width: FrameSize.screenHeight! / 4.50,
+                    height: FrameSize.screenWidth! / 10,
                     child: AppTheme.buttons.elevatedButton(
                         color: Color(0xff74A2B7),
                         child: Text(
@@ -445,10 +446,10 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: ekranGenisligi / 30),
+                  padding: EdgeInsets.only(top: FrameSize.screenWidth! / 30),
                   child: SizedBox(
-                    width: ekranYuksekligi / 4.50,
-                    height: ekranGenisligi / 10,
+                    width: FrameSize.screenHeight! / 4.50,
+                    height: FrameSize.screenWidth! / 10,
                     child: AppTheme.buttons.elevatedButton(
                         color: Color(0xff74A2B7),
                         child: Text(

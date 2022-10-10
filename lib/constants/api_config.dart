@@ -3,7 +3,6 @@ class ApiConfig {
 
   static const String baseURL = liveBaseURL;
 
-  //Corona Services
 
 
   static const String getHaberler = baseURL+ "news/getNews";
